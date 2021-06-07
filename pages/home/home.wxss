@@ -1,0 +1,55 @@
+/* pages/home/home.wxss */
+/* 轮播图 */
+.max{
+  background-color: #F1F1F1;
+  padding-bottom: 20rpx;
+}
+swiper{
+  height: 480rpx;
+}
+swiper image{
+  width: 100%;
+}
+
+/* 九宫格布局 */
+.nine{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+}
+.nine>navigator{
+  box-sizing: border-box;
+  width: 33.33%;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2rpx solid #ccc;
+  border-bottom: 2rpx solid #ccc;
+}
+.nine>navigator:nth-child(3n){
+  border-right: none;
+}
+.nine>navigator>image{
+  width: 30%;
+  height: 30%;
+}
+.nine>navigator>text{
+  margin-top: 20rpx;
+}
+
+/* two_img */
+.two_img{
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.two_img image{
+  width: 40%;
+  height: 90%;
+}

@@ -1,0 +1,17 @@
+<!--pages/list/list.wxml-->
+<!-- <text>pages/list/list.wxml</text> -->
+<view class="max">  
+    <view class="cell_input">
+      <input class="weui-input" auto-focus placeholder="🔍 搜索" />
+    </view>
+  <view class="list" wx:for="{{list}}" wx:key="id">
+    <image src="{{item.images[0]}}"></image>
+    <view class="info">
+      <view>{{item.name}}</view>
+      <view>电话：{{item.phone}}</view>
+      <view>地址：{{item.address}}</view>
+      <view>营业时间：{{item.businessHours}}</view>
+    </view>
+  </view>
+
+</view>
